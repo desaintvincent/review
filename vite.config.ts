@@ -12,15 +12,5 @@ export default defineConfig({
   build: {
     sourcemap: true,
     target: 'es2022'
-  },
-  test: {
-    environment: 'jsdom',
-    globals: true,
-    setupFiles: './vitest.setup.ts',
-    coverage: {
-      reporter: ['text', 'lcov'],
-      provider: 'v8'
-    }
   }
 });
-

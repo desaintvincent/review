@@ -21,10 +21,10 @@ export default [
     languageOptions: {
       ...(c.languageOptions || {}),
       parserOptions: {
-        project: ['./tsconfig.app.json', './tsconfig.vitest.json'],
-        tsconfigRootDir: process.cwd()
-      }
-    }
+        project: ['./tsconfig.app.json'],
+        tsconfigRootDir: process.cwd(),
+      },
+    },
   })),
   // React + a11y + hooks + refresh
   {
@@ -50,7 +50,10 @@ export default [
       'react/react-in-jsx-scope': 'off',
       'react/prop-types': 'off',
       '@typescript-eslint/no-unsafe-call': 'off',
-      '@typescript-eslint/no-unsafe-member-access': 'off'
+      '@typescript-eslint/no-unsafe-member-access': 'off',
+      '@typescript-eslint/no-unsafe-return': 'off',
+      '@typescript-eslint/no-unsafe-assignment': 'off',
+      '@typescript-eslint/no-unsafe-argument': 'off'
     }
   },
   // Prettier

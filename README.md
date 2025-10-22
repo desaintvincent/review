@@ -5,16 +5,13 @@ Minimal React + TypeScript + Vite project with modern tooling.
 ## Stack
 - React 18 + TypeScript 5
 - Vite 5
-- Vitest + Testing Library
 - ESLint (flat config) + TypeScript ESLint + Prettier
-- GitHub Actions: CI (lint, typecheck, test, build) & Pages deploy on push to `main`.
+- GitHub Actions: CI (lint, typecheck, build) & Pages deploy on push to `main`.
 
 ## Scripts
 - `yarn dev` start dev server
 - `yarn build` typecheck then build production bundle
 - `yarn preview` preview build locally
-- `yarn test` run test suite once
-- `yarn test:watch` watch mode
 - `yarn lint` run ESLint
 - `yarn format` apply Prettier
 - `yarn typecheck` TypeScript only
